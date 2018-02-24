@@ -88,6 +88,8 @@ describe "Hashing" do
     it "subsets of hashes should hash to different values" do
       a = {a: "a"}
       b = {a: "a", b: "b"}
+      p a.hash
+      p b.hash
       expect(a.hash).not_to eq(b.hash)
     end
   end
